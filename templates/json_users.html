@@ -1,0 +1,13 @@
+{% extends 'pattern.html' %}
+
+{% block body %}
+{% for el in articles %}
+<div>
+    <p class="fs-6">{</p>
+    <p class="fs-6" style="margin-left: 50px;">"id": {{ el["id"] }},</p>
+    <p class="fs-6" style="margin-left: 50px;">"name": "{{ el["name"] }}",</p>
+    <p class="fs-6" style="margin-left: 50px;">"surname": "{{ el["surname"] }}"</p>
+</div>
+},
+{% endfor %}
+{% endblock %}
